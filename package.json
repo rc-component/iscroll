@@ -1,11 +1,15 @@
 {
   "name": "rc-iscroll",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Overlay Component",
   "repository": {
     "type": "git",
     "url": "https://github.com/rc-component/rc-iscroll.git"
   },
+  "keywords": [
+    "iscroll",
+    "scroll"
+  ],
   "license": "MIT",
   "scripts": {
     "prepublish": ". ./.scripts/prepublish.sh",
