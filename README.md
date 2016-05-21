@@ -6,7 +6,7 @@ Using [iscroll-component](https://www.npmjs.com/package/iscroll-component) insid
 
 Build with [webpack](https://webpack.github.io/) and [CSS Modules](https://github.com/css-modules/css-modules)
 
-[Story book](https://rc-component.github.io/rc-iscroll/)
+[Story book](https://rc-component.github.io/iscroll/)
 
 ## Usage
 
