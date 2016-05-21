@@ -36,10 +36,10 @@ class Iscroll extends React.Component {
     })
   }
   componentWillReceiveProps() {
-    this.iscroll.refresh()
+    if (this.iscroll) this.iscroll.refresh()
   }
   componentWillUnmount() {
-    this.iscroll.unbind()
+    if (this.iscroll) this.iscroll.unbind()
   }
   render() {
     return (
