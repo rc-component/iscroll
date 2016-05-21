@@ -23,7 +23,7 @@ Build with [webpack](https://webpack.github.io/) and [CSS Modules](https://githu
 name   | type   | default    | description
 -------| ------ | ---------- | ------------
 handlebar | boolean| true      | whether use handlebar
-barClass  | string | 'handlebar' class from src/style.css  | style for overlay element
+barClass  | string | 'handlebar' class from src/style.css  | style for handlebar element
 onStart | func | null | on start event handler
 onScroll | func | null | on scroll event handler
 onRelease | func | null | on release event handler
