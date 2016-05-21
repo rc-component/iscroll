@@ -7,11 +7,13 @@ import cx from 'classnames'
 class Iscroll extends React.Component {
   static defaultProps = {
     handlebar: true,
-    barClass: style.handlebar
+    barClass: style.handlebar,
+    overflow: 80
   }
   static propTypes = {
     handlebar: React.PropTypes.bool,
     barClass: React.PropTypes.string,
+    overflow: React.PropTypes.number,
     onScroll: React.PropTypes.func,
     onStart: React.PropTypes.func,
     onRelease: React.PropTypes.func,
@@ -22,12 +24,13 @@ class Iscroll extends React.Component {
   }
   componentDidMount() {
     let el = ReactDom.findDOMNode(this)
+    var props = this.props
     let opts = {
-      handlebar: this.props.handlebar,
-      barClass: this.props.barClass
+      handlebar: props.handlebar,
+      barClass: props.barClass,
+      max: props.overflow
     }
     let is = this.iscroll = iscroll(el, opts)
-    var props = this.props
     ;['start', 'scroll', 'release', 'scrollend'].forEach(function (name) {
       let fn = props['on' + name[0].toUpperCase() + name.slice(1)]
       if (fn) {
