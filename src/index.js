@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import style from './style.css';
 import iscroll from 'iscroll'
+import cx from 'classnames'
 
 class Iscroll extends React.Component {
   static defaultProps = {
@@ -42,7 +43,7 @@ class Iscroll extends React.Component {
   }
   render() {
     return (
-      <div {...this.props}>
+      <div className={cx('scrollable', this.props.className)} style={this.props.style}>
         <div>
           {this.props.children}
         </div>
