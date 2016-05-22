@@ -2,7 +2,6 @@
   position: absolute;
   right: 1px;
   top: 0px;
-  -webkit-transition: background-color 0.2s ease-out, -webkit-transform 0.1s ease-out,width 0.1s ease-out, height 0.1s ease-out;
   transition: background-color 0.2s ease-out, transform 0.1s ease-out,width 0.1s ease-out, height 0.1s ease-out;
   width: 2px;
   border-radius: 1px;
