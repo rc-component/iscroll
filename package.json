@@ -8,7 +8,8 @@
   },
   "keywords": [
     "iscroll",
-    "scroll"
+    "scroll",
+    "react"
   ],
   "license": "MIT",
   "scripts": {
