@@ -1,11 +1,12 @@
 {
   "name": "rc-iscroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Overlay Component",
   "repository": {
     "type": "git",
     "url": "https://github.com/rc-component/rc-iscroll.git"
   },
+  "esnext": "src/index.js",
   "keywords": [
     "react-component",
     "iscroll",
