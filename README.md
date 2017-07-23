@@ -4,7 +4,7 @@ Simulate iscroll component for [react](https://facebook.github.io/react/)
 
 Using [iscroll-component](https://www.npmjs.com/package/iscroll-component) inside.
 
-Build with [webpack](https://webpack.github.io/) and [CSS Modules](https://github.com/css-modules/css-modules)
+Build with [webpack](https://webpack.github.io/)
 
 [Story book](https://rc-component.github.io/iscroll/)
 
@@ -24,15 +24,15 @@ Build with [webpack](https://webpack.github.io/) and [CSS Modules](https://githu
 
 ## Props
 
-name   | type   | default    | description
--------| ------ | ---------- | ------------
-handlebar | boolean| true      | whether use handlebar
-barClass  | string | 'handlebar' class from src/style.css  | style for handlebar element
-overflow | number| 80 | max overflow of scrollTop
-onStart | func | null | on start event handler
-onScroll | func | null | on scroll event handler
-onRelease | func | null | on release event handler
-onScrollend | func | null | on scrollend event handler
+name        | type   | default    | description
+------------| ------ | ---------- | ------------
+handlebar   | boolean| true       | whether use handlebar
+barClass    | string | 'handlebar' class from src/style.css  | style for handlebar element
+overflow    | number | 80         | max overflow of scrollTop
+onStart     | func   | null       | on start event handler
+onScroll    | func   | null       | on scroll event handler
+onRelease   | func   | null       | on release event handler
+onScrollend | func   | null       | on scrollend event handler
 
 Other props goes to underneath div React.element.
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 import Iscroll from '../index';
+require('../../style.css')
 
 const boxStyles = {
   height: 400,

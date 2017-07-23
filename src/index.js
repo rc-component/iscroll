@@ -1,23 +1,23 @@
-import React from 'react';
-import ReactDom from 'react-dom';
-import style from './style.css';
+import PropTypes from 'prop-types'
+import React from 'react'
+import ReactDom from 'react-dom'
 import iscroll from 'iscroll'
 import cx from 'classnames'
 
 class Iscroll extends React.Component {
   static defaultProps = {
     handlebar: true,
-    barClass: style.handlebar,
+    barClass: 'iscroll-handlebar',
     overflow: 80
   }
   static propTypes = {
-    handlebar: React.PropTypes.bool,
-    barClass: React.PropTypes.string,
-    overflow: React.PropTypes.number,
-    onScroll: React.PropTypes.func,
-    onStart: React.PropTypes.func,
-    onRelease: React.PropTypes.func,
-    onScrollend: React.PropTypes.func
+    handlebar: PropTypes.bool,
+    barClass: PropTypes.string,
+    overflow: PropTypes.number,
+    onScroll: PropTypes.func,
+    onStart: PropTypes.func,
+    onRelease: PropTypes.func,
+    onScrollend: PropTypes.func
   }
   constructor(props) {
     super(props)
@@ -38,7 +38,7 @@ class Iscroll extends React.Component {
       }
     })
   }
-  componentWillReceiveProps() {
+  componentDidUpdate() {
     if (this.iscroll) this.iscroll.refresh()
   }
   componentWillUnmount() {

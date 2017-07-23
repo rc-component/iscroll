@@ -12,7 +12,7 @@ const config = {
     loaders: [
       {
         test: /\.css$/,
-        loader: 'style!css?sourceMap&modules&localIdentName=[name]__[local]__[hash:base64:5]!postcss',
+        loader: 'style!css?sourceMap!postcss',
         include: path.resolve(__dirname, '../')
       }
     ]
